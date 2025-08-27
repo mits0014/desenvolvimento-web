@@ -1,0 +1,137 @@
+:root {
+    --color-primary: #d78100;
+}
+
+
+
+body {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    grid-column: 1 / span 3;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    background-color: var(--color-primary);
+    padding-inline: 20px;
+    align-items: center;
+    color: white;
+}
+
+header ul{
+    display: flex;
+}
+
+header li{
+    list-style: none;
+    margin: 7px;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+main {
+    grid-column: 1 / span 3;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+aside {
+    width: 250px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    height: fit-content;
+}
+
+aside h3 {
+    margin-top: 0;
+}
+
+article {
+    display: flex;
+    margin-left: 15px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    background: #ffffff;
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin: 0 auto;
+}
+
+article h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+article p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+}
+
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+figcaption {
+    font-size: 14px;
+    color: #777;
+    margin-top: 8px;
+}
+
+footer {
+    grid-column: 1 / span 3;
+    background:var(--color-primary);
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 30px;
+}
+
+@media ( max-width: 768px ) {
+    main {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    aside {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    article {
+        flex-direction: column;
+        max-width: 100%;
+        margin-left: 0;
+    }
+}
