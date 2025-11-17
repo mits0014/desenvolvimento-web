@@ -40,7 +40,7 @@
     gap: 1rem;
     width: 100%;
 }
-#form-contact input, #form-contact textarea {
+#form-contact .input-text{
     width: 75%;
     padding: 0.75rem 1rem;
     border: 0.063rem solid #cccccc;
@@ -84,7 +84,7 @@
             color: var(--primary-color);
             font-weight: var(--fw-bold);
         }
-        .form-contact input, .form-contact textarea {
+        .form-contact .input-text {
             width: 40%;
         }
     }

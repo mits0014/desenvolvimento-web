@@ -24,6 +24,7 @@
 
 #solution .even-columns {
     gap: 2rem;
+    justify-content: center;
 }
 
 .card {
