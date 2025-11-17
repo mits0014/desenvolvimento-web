@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+table {
+    border-collapse: collapse;
+    width: 400px;
+    background: #fff;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #e9ecef;
+    color: #333;
+}
+.container {
+  margin: 20px 0;
+}
+
+.delete_icon{
+  font-family: 'Material Symbols Outlined', Arial, sans-serif;
+  font-size: 20px;
+  color: red;
+  cursor: pointer;
+}
+
+.delete_icon:hover {
+  color: darkred;
+}
+
+input {
+padding: 8px;
+font-family: 'Material Symbols Outlined', Arial, sans-serif;
+  font-size: 16px;
+}
+
+button {
+  padding: 8px 12px;
+  margin-left: 5px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  width: 300px;
+}
+
+li {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+li:hover {
+  background: #f8d7da;
+}
